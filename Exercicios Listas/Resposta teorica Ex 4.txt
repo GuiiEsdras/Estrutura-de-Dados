@@ -1,0 +1,3 @@
+Para implementar essa nova função size seria necessário primeiramente criar um novo atributo na Struct lista (a cabeça da lista) que possa armazenar um número referente ao tamanho atual da lista. Essa variável seria incrementada em +1 toda vez que fosse inserido um novo nó e decrementada ao retirar um nó.
+
+Ao implementar essa nova modificação seria necessário modificar todas as outras funções que removem ou adicionam nós a lista, pois teríamos que incrementar ou decrementar a variável contadora de elementos localizada dentro da Struct list (cabeça), além de ter de modificar a própria função size fazendo-a apenas retornar o valor desta variável.
