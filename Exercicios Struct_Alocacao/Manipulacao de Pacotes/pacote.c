@@ -12,7 +12,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-TPack* createDataPacket( int id, int origem, int destino, int bytes) {
+TPack* createDataPacket( int id, int origem, int destino, int bytes ) {
   TPack *newdataPack = (TPack*) malloc( sizeof(TPack) );
 
   newdataPack->id = id;
@@ -27,7 +27,7 @@ TPack* createDataPacket( int id, int origem, int destino, int bytes) {
   return newdataPack;
 }
 
-TPack* createACKPacket( int id, int origem, int destino) {
+TPack* createACKPacket( int id, int origem, int destino ) {
   TPack* newACKPack = (TPack*) malloc(sizeof(TPack));
 
   newACKPack->id = id;
@@ -40,7 +40,7 @@ TPack* createACKPacket( int id, int origem, int destino) {
   return newACKPack;
 }
 
-void writeData( TPack *pacote, int bytes[], int tam) {
+void writeData( TPack *pacote, int bytes[], int tam ) {
   for( register int i=0; i < tam; i++ ) {
     pacote->carga[i] = bytes[i];
   }
