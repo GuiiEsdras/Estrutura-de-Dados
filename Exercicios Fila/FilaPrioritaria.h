@@ -7,6 +7,10 @@ typedef struct FilaPrioritaria {
 } FilaPrioritaria;
 
 FilaPrioritaria* criaFilaPrioritaria();
-void enfileirarFP(FilaPrioritaria*, char*, int);
+int enfileirarFP(FilaPrioritaria*, char*, int);
 int desenfileirarFP(FilaPrioritaria*, Pessoa*);
-//void limpaFilaFP(FilaPrioritaria*);
+int limpaFilaFP(FilaPrioritaria*);
+
+int printaFilaFP(FilaPrioritaria*);
+void tamanhoDaFilaFP(FilaPrioritaria*);
+void terminarFilaFP(FilaPrioritaria*);

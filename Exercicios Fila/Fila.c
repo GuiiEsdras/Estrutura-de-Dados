@@ -1,6 +1,6 @@
 #include "Fila.h"
 #include <string.h>
-// OBS: Pessoa == Nó...
+// OBS: Pessoa == No...
 
 Fila* criaFila() {
     Fila* f = (Fila*) malloc(sizeof(Fila));
@@ -8,74 +8,138 @@ Fila* criaFila() {
 
     f->inicio = NULL;
     f->fim = NULL;
+    f->tamanhoDaFila = 0;
 
-    printf("Fila iniciada!\n");
+    printf("Fila Normal iniciada com sucesso!\n");
     return f;
 }
 
-void enfileirar(Fila* fila, char* nome, int idade) {
-    PessoaNaFila* novaPessoa = (PessoaNaFila*) malloc(sizeof(PessoaNaFila));
-
-    strcpy(novaPessoa->p.nome, nome);
-    novaPessoa->p.idade = idade;
-
-    if( fila->fim == NULL ) { // Se a fila não tiver ninguém no final dela quer dizer que está vazia...
-        fila->inicio = novaPessoa; // novaPessoa passa a ser a primeira...
-        fila->fim = novaPessoa; // ...e a última.
-    }
-
-    else { // Caso já haja alguém na fila...
-        fila->fim->prox = novaPessoa; // a última "pessoa" passa a apontar para novaPessoa...
-        fila->fim = novaPessoa; // ... e novaPessoa passa a ser a última "pessoa" da fila.
-    }
-
-    printf("%s (%d anos) entrou na fila!\n", nome, idade);
-}
-
-// Lembrete pessoal: Em uma fila, o elemento que está no inicio é o primeiro a ser removido/desenfileirado.
-// "FiFo" - First in, First Out!
-int desenfileirar(Fila* fila, Pessoa* p_ret) {
-    if( fila->inicio == NULL ) return -1; // Verifica se a fila está vazia;
-    else {
-        *p_ret = (fila->inicio)->p;
-        //PessoaNaFila* pessoaTemp; // Cria uma "pessoa"/Nó temporaria;
-        PessoaNaFila* pessoaTemp = fila->inicio; // "pessoa"/Nó temp recebe a "pessoa"/Nó que está no inicio/primeira posição da fila;
-        //*p_ret = pessoaTemp->p; // Variável externa do tipo Pessoa* recebe os dados dessa "pessoa"/Nó;
-
-        fila->inicio = (fila->inicio)->prox; // A "pessoa"/Nó que ocupava a segunda posição passa a ocupar a primeira posição;
-
-        if( fila->inicio == NULL ) { // se por acaso não havia ninguém na segunda posição...
-            fila->fim = NULL; // o fim da fila deve ser NULL, pois não tem mais ninguém na fila e a fila agora está vazia.
-        }
-
-        free(pessoaTemp); // Remove a "pessoa"/Nó que ocupava a primeira posição da fila.
+int enfileirar(Fila* fila, char* nome, int idade) {
+    if(fila == NULL) {
+        printf("Fila normal nao iniciada!\n"); 
         return 0;
     }
+
+    else if( idade < 0 ) {
+        printf("Idade fora dos limites!\n");
+        return 0;
+    }
+
+    else {
+        PessoaNaFila* novaPessoa = (PessoaNaFila*) malloc(sizeof(PessoaNaFila));
+
+        strcpy(novaPessoa->p.nome, nome);
+        novaPessoa->p.idade = idade;
+
+        if( fila->fim == NULL ) { // Se a fila nao tiver ninguem no final dela quer dizer que esta vazia...
+            fila->inicio = novaPessoa; // novaPessoa passa a ser a primeira...
+            fila->fim = novaPessoa; // ...e a ultima.
+        }
+
+        else { // Caso ja haja alguem na fila...
+            fila->fim->prox = novaPessoa; // a ultima "pessoa" passa a apontar para novaPessoa...
+            fila->fim = novaPessoa; // ... e novaPessoa passa a ser a ultima "pessoa" da fila.
+        }
+
+        fila->tamanhoDaFila++;
+        printf("%s (%d anos) entrou na fila!\n", nome, idade);
+        return 1;
+    }
 }
 
-void printaFila(Fila* fila) {
-    if( fila->inicio == NULL ) {
-        printf("Esta fila esta vazia!\n");
+// Lembrete pessoal: Em uma fila, o elemento que esta no inicio e o primeiro a ser removido/desenfileirado.
+// "FiFo" - First in, First Out!
+int desenfileirar(Fila* fila, Pessoa* p_ret) {
+    if(fila == NULL) { 
+        printf("Fila normal nao iniciada!\n"); 
+        return 0; 
     }
+
+    else if( fila->inicio == NULL ) { 
+        printf("Esta fila se encontra vazia!\n"); 
+        return 0; 
+    }
+
     else {
-        printf("|Pessoas na fila|\n");
-        register int i;
-        for( i = 1; fila->inicio != NULL; fila->inicio = fila->inicio->prox, i++ ) {
-            printf("Posicao: %d | Nome: %s - Idade: %d \n", 
-                                    i, fila->inicio->p.nome, fila->inicio->p.idade);
+        *p_ret = (fila->inicio)->p;
+        //PessoaNaFila* pessoaTemp; // Cria uma "pessoa"/No temporaria;
+        PessoaNaFila* pessoaTemp = fila->inicio; // "pessoa"/No temp recebe a "pessoa"/No que esta no inicio/primeira posiçao da fila;
+        //*p_ret = pessoaTemp->p; // Variavel externa do tipo Pessoa* recebe os dados dessa "pessoa"/No;
+
+        fila->inicio = (fila->inicio)->prox; // A "pessoa"/No que ocupava a segunda posiçao passa a ocupar a primeira posiçao;
+
+        if( fila->inicio == NULL ) { // se por acaso nao havia ninguem na segunda posiçao...
+            fila->fim = NULL; // o fim da fila deve ser NULL, pois nao tem mais ninguem na fila e a fila agora esta vazia.
         }
+
+        free(pessoaTemp); // Remove a "pessoa"/No que ocupava a primeira posiçao da fila.
+        fila->tamanhoDaFila--;
+        return 1;
     }
 }
 
 int limpaFila(Fila* fila) {
-    if( fila->inicio == NULL ) return -1;
-
-    while( fila->inicio != NULL ) {
-        PessoaNaFila* pessoaTemp;
-        pessoaTemp = fila->inicio;
-        fila->inicio = fila->inicio->prox;
-        free(pessoaTemp);
+    if(fila == NULL) {
+        printf("Fila normal nao iniciada!\n"); 
+        return 0;
     }
-    fila->fim = NULL;
-    return 1;
+
+    else if( fila->inicio == NULL ) {
+        printf("Esta fila se encontra vazia!\n");
+        return 0;
+    }
+
+    else {
+
+        while( fila->inicio != NULL ) {
+            PessoaNaFila* Aux = fila->inicio;
+            fila->inicio = fila->inicio->prox;
+            free(Aux);
+        }
+
+        fila->fim = NULL;
+        fila->tamanhoDaFila = 0;
+        printf("Fila esvaziada!\n");
+
+        return 1;
+    }
+}
+
+
+int printaFila(Fila* fila) {
+    if(fila == NULL) {
+        printf("Fila normal nao iniciada!\n"); 
+        return 0;
+    }
+
+    else if( fila->inicio == NULL ) {
+        printf("Esta fila se encontra vazia!\n");
+        return 0;
+    }
+
+    else {
+        printf("\n|Pessoas na fila|\n");
+
+        PessoaNaFila* pessoaAux = fila->inicio;
+        int cont = 1;
+        while(pessoaAux != NULL) {
+            printf("Posicao: %d | Nome: %s - Idade: %d\n", cont, pessoaAux->p.nome, pessoaAux->p.idade);
+            pessoaAux = pessoaAux->prox;
+            cont++;
+        } 
+        printf("\n");
+        return 1;
+    }
+}
+
+int tamanhoDaFila(Fila* f) { return f->tamanhoDaFila; }
+
+void terminarFila(Fila* fila) {
+    printf("Saindo...\n");
+    free(fila);
+}
+
+
+void separador() {
+    printf("-----\n");
 }

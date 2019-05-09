@@ -14,10 +14,16 @@ typedef struct PessoaNaFila {
 typedef struct {
   PessoaNaFila* inicio;
   PessoaNaFila* fim;
+  int tamanhoDaFila;
 } Fila;
 
 Fila* criaFila();
-void enfileirar(Fila*, char*, int);
+int enfileirar(Fila*, char*, int);
 int desenfileirar(Fila*, Pessoa*);
-void printaFila(Fila*);
 int limpaFila(Fila*);
+
+int printaFila(Fila*);
+int tamanhoDaFila(Fila*);
+void terminarFila(Fila*);
+
+void separador();
