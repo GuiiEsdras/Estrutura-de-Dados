@@ -1,8 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+#define MAX 51
+#define FilaNormal 1
+#define FilaPriori 2
+
+typedef enum { false, true } bool;
+
 typedef struct {
-  char nome[51];
+  char nome[MAX];
   int idade;
 } Pessoa;
 
@@ -22,7 +28,7 @@ int enfileirar(Fila*, char*, int);
 int desenfileirar(Fila*, Pessoa*);
 int limpaFila(Fila*);
 
-int printaFila(Fila*);
+void printaFila(Fila*);
 int tamanhoDaFila(Fila*);
 void terminarFila(Fila*);
 

@@ -11,6 +11,6 @@ int enfileirarFP(FilaPrioritaria*, char*, int);
 int desenfileirarFP(FilaPrioritaria*, Pessoa*);
 int limpaFilaFP(FilaPrioritaria*);
 
-int printaFilaFP(FilaPrioritaria*);
+void printaFilaFP(FilaPrioritaria*);
 void tamanhoDaFilaFP(FilaPrioritaria*);
 void terminarFilaFP(FilaPrioritaria*);
