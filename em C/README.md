@@ -114,7 +114,7 @@ Criando e executando um programa simples em C pelo CMD ou Terminal
    
 5. Finalmente, será capaz de compilar e executar programas C pelo terminal.
    
-6. Geralmente (quase todas) as distros linux já vem com o gcc instalado. Porém, ainda assim, ao tentar rodar algum programa ou interagir com programas pelo VSCode, alguns erros podem acontecer como, por exemplo, não encontrar as bibliotcas padrão (stdio.h). <br/>
+6. Geralmente (quase todas) as distros linux já vem com o gcc instalado. Porém, ainda assim, ao tentar rodar algum programa ou interagir com programas pelo VSCode, alguns erros podem acontecer como, por exemplo, não encontrar as bibliotecas padrões (stdio.h). <br/>
    Nesse caso, para solucionar o problema, basta rodar o comando: <br/>
    `> sudo apt-get install build-essentials` <br/>
    para instalar as dependências necessárias.
