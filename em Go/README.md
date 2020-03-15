@@ -72,7 +72,7 @@
 
 <!-- Objetivo -->
 ## Objetivo
-Criado com a finalidade de guardar meus projetos, ideias, anotações, exercícios e programas pessoais feitos em <strong>Go</strong> e também como complemento de aprendizagem para a disciplina de <strong>Estrura de Dados e Algoritmos</strong>.
+Criado com a finalidade de guardar meus projetos, ideias, anotações, exercícios e programas pessoais feitos em <strong>Go</strong> e também como complemento de aprendizagem para a disciplina de <strong>Estrutura de Dados e Algoritmos</strong>.
 <!-- -->
 
 <!-- Material Utilizado -->
