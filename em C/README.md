@@ -68,7 +68,7 @@
 
 <!-- Objetivo -->
 ## Objetivo
-Este repositório foi criado com a finalidade de guardar meus projetos, ideias, anotações, exercícios e programas pessoais feitos em <strong>C</strong>.
+Criado com a finalidade de guardar meus projetos, ideias, anotações, exercícios e programas pessoais feitos em <strong>C</strong> e também como complemento de aprendizagem para a disciplina de <strong>Estrura de Dados e Algoritmos</strong>.
 <!-- -->
 
 <!-- Material Utilizado -->
