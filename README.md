@@ -10,6 +10,7 @@ Neste repositório, encontram-se alguns programas e soluções de exercícios da
 ## Material Utilizado
 
 * [GCC Compiler](http://gcc.gnu.org/)
+* [GoLang](https://golang.org/)
 * IDE's:
   * [Visual Studio Code](https://code.visualstudio.com/)
   * [CLion](https://www.jetbrains.com/clion/)

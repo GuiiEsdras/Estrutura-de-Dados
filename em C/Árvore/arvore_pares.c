@@ -1,6 +1,6 @@
 #include "arvore.h"
 
-// gcc ./include/arvore.h ./src/arvore.c ./tests/arvore_pares.c -o arpares
+// gcc arvore.h arvore.c arvore_pares.c -o arpares
 
 int main()
 {
@@ -20,6 +20,7 @@ int main()
     insereNoDeBusca(a, 4);
     insereNoDeBusca(a, 20);
     insereNoDeBusca(a, 25);
+    insereNoDeBusca(a, 23);
     insereNoDeBusca(a, 17);
     insereNoDeBusca(a, 30);
     insereNoDeBusca(a, 12);
