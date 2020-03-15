@@ -33,7 +33,7 @@
 <p align="center">
     <a href="Exercícios Resolvidos">Exercícios Resolvidos</a>
     ·
-    <a href="Programas Simples">Programas Simples</a>
+    <a href="Programas">Programas</a>
     ·
     <a href="Projetos">Projetos</a>
 </p>

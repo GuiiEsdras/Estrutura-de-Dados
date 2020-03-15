@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main() {
+int main(int argc, char *argv[]) {
 
     // .::Constantes numéricas::. //
     
@@ -22,4 +22,5 @@ int main() {
     printf("1984 em hexadecimal é 0x%x \n", 1984);
     printf("0123 em decimal é %d \n", 0123);
     printf("0x12f em decimal é %d \n", 0x12f);
+    return 0;
 }
