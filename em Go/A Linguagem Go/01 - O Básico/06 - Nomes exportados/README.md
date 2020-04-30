@@ -24,6 +24,13 @@ func main() {
 ```
 [pi_incorreto.go](Pi%20incorreto/pi_incorreto.go)
 
+*Saída:*
+```bash
+# command-line-arguments
+./main.go:9: cannot refer to unexported name math.pi
+./main.go:9: undefined: math.pi
+```
+
 O código acima dá um erro, pois as letras minúsculas não podem ser exportadas. Por outro lado, o código abaixo funcionará bem pois `Pi` é iniciado com uma letra maiúscula para que possa ser exportado.
 
 ```go
@@ -39,6 +46,11 @@ func main() {
 }
 ```
 [pi_correto.go](Pi%20correto/pi_correto.go)
+
+*Saída:*
+```bash
+3.141592653589793
+```
 
 `Pi` é exportado e pode ser acessado fora do pacote, enquanto `pi` não está disponível.
 
@@ -59,6 +71,12 @@ func main() {
 }
 ```
 [http_package.go](HTTP%20package/http_package.go)
+
+*Saída:*
+```bash
+HTTP status OK uses code: 200
+```
+
 
 ## Links úteis
 - [Documentação Go](http://godoc.org/)

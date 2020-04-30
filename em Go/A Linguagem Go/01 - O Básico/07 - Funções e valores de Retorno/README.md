@@ -26,6 +26,11 @@ func main() {
 }
 ```
 
+*Saída:*
+```bash
+55
+```
+
 No exemplo a seguir, em vez de declarar o tipo de cada parâmetro, declaramos apenas um tipo que se aplica a ambos.
 
 ```go
@@ -71,6 +76,11 @@ func main() {
 }
 ```
 [exemplo_de_funcao.go](Função/exemplo_de_funcao.go)
+
+*Saída:*
+```bash
+Guilherme mora em Paraíba, América do Sul
+```
 
 ## Resultados nomeados
 

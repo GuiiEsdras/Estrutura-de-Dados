@@ -26,6 +26,12 @@ func main() {
 ```
 [artista_por_valor.go](Artista%20por%20valor/artista_por_valor.go)
 
+*Saída:*
+```bash
+Guilherme lancou sua 51º música
+Guilherme tem um total de 50 músicas
+```
+
 Neste exemplo, a quantidade total de músicas no valor da variável `eu` não foi alterada. Para alterar o valor passado, precisamos passá-lo por referência, usando um ponteiro.
 
 ```go
@@ -51,6 +57,12 @@ func main() {
 
 ```
 [artista_por_referencia.go](Artista%20por%20referência/artista_por_referencia.go)
+
+*Saída:*
+```bash
+Guilherme lancou sua 51º música
+Guilherme tem um total de 51 músicas
+```
 
 A única alteração entre as duas versões é que `novoLancamento` leva um ponteiro para o valor `Artista` e, quando inicializo a variável `eu`, uso o símbolo `&` para obter um ponteiro para o valor.
 

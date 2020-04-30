@@ -81,6 +81,11 @@ func main() {
 ```
 *[declarando_variaveis.go](declarando_variaveis.go)*
 
+Saída:
+```bash
+Prince Oberyn idade 32 de Dorne
+```
+
 Uma variável pode conter qualquer tipo, incluindo funções:
 
 ```go

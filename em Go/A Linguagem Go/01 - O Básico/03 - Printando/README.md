@@ -37,5 +37,10 @@ func main() {
 ```
 [printing.go](printing.go)
 
+*Saída:*
+```bash
+Caprica-Six também conhecida como Número 6
+```
+
 ## Links úteis
 - [Documentação do Pacote `fmt`](http://golang.org/pkg/fmt/#hdr-Printing)
