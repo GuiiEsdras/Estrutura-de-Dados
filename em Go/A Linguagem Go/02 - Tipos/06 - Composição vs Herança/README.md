@@ -5,6 +5,7 @@ Esta seção explica os detalhes da Composição no Go e como ele pode ser usado
 - [Composição como alternativa à herança](#composição-como-alternativa-à-herança)
 - [Composição](#composição)
 - [Quiz](#quiz)
+- [- [ ] B) Falso](#ul-classcontains-task-listli-classtask-list-iteminput-classtask-list-item-checkbox-disabled-typecheckbox-b-falsoliul)
 
 ## Composição como alternativa à herança
 
@@ -236,3 +237,6 @@ Observe que você ainda precisa definir o logger e esse é um bom motivo para us
 1. Verdadeiro ou falso: Ao usar um literal de estrutura com uma composição implícita, podemos passar os campos compostos.
    - [ ] A) Verdadeiro
    - [ ] B) Falso
+---
+
+Isso conclui a seção sobre como a composição funciona. A seção a seguir contém um exercício baseado neste exemplo para aprimorar ainda mais sua compreensão do conceito de composição.
