@@ -1,5 +1,5 @@
 <!-- Título do Respositório -->
-# Here We Go
+# Here We Go <!-- omit in toc -->
 <!-- -->
 
 <!-- Badges -->
@@ -23,7 +23,7 @@
 </p>
 <!-- -->
 
-<!-- Links Principais-->
+<!-- Links da Linguagem -->
 <p align="center">
     <a href="https://golang.org/doc/" target="_blank"><strong>Documentação da linguagem »</strong></a>
     <br/>
@@ -40,7 +40,7 @@
     ·
     <a href="Programas">Programas Simples</a>
     ·
-    <a href="Projetos">Projetos</a>
+    <a href="Projetos">Mini Projetos</a>
 </p>
 <!-- -->
 
@@ -53,21 +53,19 @@
 ---
 
 <!-- Table of Contents -->
-## Glossário
-- [Here We Go](#here-we-go)
-  - [Glossário](#gloss%c3%a1rio)
-  - [Objetivo](#objetivo)
-  - [Material Utilizado](#material-utilizado)
-    - [Sistema Operacional](#sistema-operacional)
-    - [Compilador](#compilador)
-    - [IDE's](#ides)
-  - [Programando em Go](#programando-em-go)
-    - [Pré-Requisitos](#pr%c3%a9-requisitos)
-    - [Executando .go pelo CMD](#executando-go-pelo-cmd)
-    - [Exemplo de Hello World](#exemplo-de-hello-world)
-  - [Links Úteis](#links-%c3%9ateis)
-  - [Autor](#autor)
-  - [Licença](#licen%c3%a7a)
+## Glossário <!-- omit in toc -->
+- [Objetivo](#objetivo)
+- [Material Utilizado](#material-utilizado)
+  - [Sistema Operacional](#sistema-operacional)
+  - [Compilador](#compilador)
+  - [IDE's](#ides)
+- [Programando em Go](#programando-em-go)
+  - [Pré-Requisitos](#pr%c3%a9-requisitos)
+  - [Executando .go pelo CMD](#executando-go-pelo-cmd)
+  - [Exemplo de Hello World](#exemplo-de-hello-world)
+- [Links Úteis](#links-%c3%9ateis)
+- [Autor](#autor)
+- [Licença](#licen%c3%a7a)
 <!-- -->
 
 <!-- Objetivo -->

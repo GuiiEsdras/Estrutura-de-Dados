@@ -1,5 +1,5 @@
 <!-- Título do Respositório -->
-# C Room
+# C Room <!-- omit in toc -->
 <!-- -->
 
 <!-- Badges -->
@@ -18,7 +18,7 @@
 </p>
 <!-- -->
 
-<!-- Links Principais-->
+<!-- Links da Linguagem -->
 <p align="center">
     <a href="https://devdocs.io/c/" target="_blank"><strong>Documentação da linguagem »</strong></a>
     <br/>
@@ -33,9 +33,9 @@
 <p align="center">
     <a href="Exercícios Resolvidos">Exercícios Resolvidos</a>
     ·
-    <a href="Programas">Programas</a>
+    <a href="Programas">Programas Simples</a>
     ·
-    <a href="Projetos">Projetos</a>
+    <a href="Projetos">Mini Projetos</a>
 </p>
 <!-- -->
 
@@ -48,22 +48,20 @@
 ---
 
 <!-- Table of Contents -->
-## Glossário
-- [C Room](#c-room)
-  - [Glossário](#gloss%c3%a1rio)
-  - [Objetivo](#objetivo)
-  - [Material Utilizado](#material-utilizado)
-    - [Sistema Operacional](#sistema-operacional)
-    - [Compilador](#compilador)
-    - [IDE](#ide)
-  - [Programando em C](#programando-em-c)
-    - [Pré-Requisitos](#pr%c3%a9-requisitos)
-    - [Executando .c pelo CMD ou Terminal](#executando-c-pelo-cmd-ou-terminal)
-    - [Criando Árvore de Diretórios para Projeto com VSCode](#criando-%c3%81rvore-de-diret%c3%b3rios-para-projeto-com-vscode)
-    - [Exemplo de Programa](#exemplo-de-programa)
-  - [Links Úteis](#links-%c3%9ateis)
-  - [Autor](#autor)
-  - [Licença](#licen%c3%a7a)
+## Glossário <!-- omit in toc -->
+- [Objetivo](#objetivo)
+- [Material Utilizado](#material-utilizado)
+  - [Sistema Operacional](#sistema-operacional)
+  - [Compilador](#compilador)
+  - [IDE](#ide)
+- [Programando em C](#programando-em-c)
+  - [Pré-Requisitos](#pr%c3%a9-requisitos)
+  - [Executando .c pelo CMD ou Terminal](#executando-c-pelo-cmd-ou-terminal)
+  - [Criando Árvore de Diretórios para Projeto com VSCode](#criando-%c3%81rvore-de-diret%c3%b3rios-para-projeto-com-vscode)
+  - [Exemplo de Programa](#exemplo-de-programa)
+- [Links Úteis](#links-%c3%9ateis)
+- [Autor](#autor)
+- [Licença](#licen%c3%a7a)
 <!-- -->
 
 <!-- Objetivo -->
